@@ -12,6 +12,6 @@ git checkout -b main
 git add -A
 git commit -m "scriped deploy"
 
-git push -f git@github.com:Backlang-Team/docs.git main:gh-pages
+git push -f git@github.com:Backlang-Org/backlang-org.github.io.git main:gh-pages
 
 cd ..
