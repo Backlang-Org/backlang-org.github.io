@@ -4,7 +4,7 @@ import logo from "../logo.svg";
 
 import { AiOutlineGithub } from "solid-icons/ai";
 import { BsDiscord } from "solid-icons/bs";
-import { Link } from "solid-app-router";
+import { Link, NavLink } from "solid-app-router";
 
 const Header: Component = () => {
   return (
@@ -20,17 +20,29 @@ const Header: Component = () => {
         </Link>
       </div>
       <nav class="flex w-1/3 items-center justify-center space-x-5">
-        <Link href="getting-started" class="focus:outline-none">
-          <h3 class="font-roboto text-2xl font-thin hover:underline">
-            Getting Started
-          </h3>
-        </Link>
-        <Link href="learn" class="focus:outline-none">
-          <h3 class="font-roboto text-2xl font-thin hover:underline">Learn</h3>
-        </Link>
-        <Link href="docs" class="focus:outline-none">
-          <h3 class="font-roboto text-2xl font-thin hover:underline">Docs</h3>
-        </Link>
+        <NavLink
+          href="getting-started"
+          inactiveClass="focus:outline-none hover:underline"
+          activeClass="focus:outline-none underline"
+        >
+          <h3 class="font-roboto text-2xl font-thin">Getting Started</h3>
+        </NavLink>
+        <NavLink
+          href="learn"
+          class="focus:outline-none"
+          inactiveClass="focus:outline-none hover:underline"
+          activeClass="focus:outline-none underline"
+        >
+          <h3 class="font-roboto text-2xl font-thin">Learn</h3>
+        </NavLink>
+        <NavLink
+          href="docs"
+          class="focus:outline-none"
+          inactiveClass="focus:outline-none hover:underline"
+          activeClass="focus:outline-none underline"
+        >
+          <h3 class="font-roboto text-2xl font-thin">Docs</h3>
+        </NavLink>
       </nav>
       <div class="flex w-1/3 items-center justify-end">
         <a
