@@ -42,7 +42,7 @@ const Header: Component = () => {
         </a>
         <a
           class="flex items-center overflow-hidden cursor-pointer h-16"
-          href="https://github.com/Backlang-Team/Backlang"
+          href="https://github.com/Backlang-Org/Backlang"
           target="__blank"
         >
           <AiOutlineGithub size={60} class="p-2 pr-3" color="#000000" />
