@@ -11,7 +11,7 @@ const App: Component = () => {
   return (
     <div class="h-screen bg-[#1E1F33]">
       <Header />
-      <Routes base="/docs/">
+      <Routes>
         <Route path="/" component={Home} />
       </Routes>
     </div>

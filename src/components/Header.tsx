@@ -10,7 +10,7 @@ const Header: Component = () => {
   return (
     <header class="flex w-full h-16 sticky mt-0 z-40 bg-slate-50 shadow-md px-14">
       <div class="flex w-1/3 items-center justify-start">
-        <Link href="/docs/">
+        <Link href="/" class="focus:outline-none">
           <div class="flex items-center">
             <img src={logo} class="h-14 p-1 pl-2" alt="logo" />
             <h2 class="-ml-3 font-roboto text-3xl font-thin text-[#57B1FF]">
@@ -20,15 +20,15 @@ const Header: Component = () => {
         </Link>
       </div>
       <nav class="flex w-1/3 items-center justify-center space-x-5">
-        <Link href="/docs/getting-started">
+        <Link href="/getting-started" class="focus:outline-none">
           <h3 class="font-roboto text-2xl font-thin hover:underline">
             Getting Started
           </h3>
         </Link>
-        <Link href="/docs/learn">
+        <Link href="/learn" class="focus:outline-none">
           <h3 class="font-roboto text-2xl font-thin hover:underline">Learn</h3>
         </Link>
-        <Link href="/docs/docs">
+        <Link href="/docs" class="focus:outline-none">
           <h3 class="font-roboto text-2xl font-thin hover:underline">Docs</h3>
         </Link>
       </nav>
