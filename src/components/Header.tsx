@@ -12,7 +12,7 @@ const Header: Component = () => {
       <div class="flex w-1/3 items-center justify-start">
         <Link href="/" class="focus:outline-none">
           <div class="flex items-center">
-            <img src={logo} class="h-14 p-1 pl-2" alt="logo" />
+            <img src={logo} class="h-14 p-1 pl-2" />
             <h2 class="-ml-3 font-roboto text-3xl font-thin text-[#57B1FF]">
               acklang
             </h2>
