@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.markdown-container {
+    @apply p-5
+}
+
+.markdown-container h1 {
+    @apply text-[2em] pb-1 font-segoe font-semibold border-b mb-5 mt-2
+}
+
+.markdown-container h2 {
+    @apply text-[1.5em] pb-1 font-segoe font-semibold border-b mb-5 mt-2
+}
+
+.markdown-container h3 {
+    @apply text-[1.25em] pb-1 font-segoe font-semibold border-b mb-5 mt-2
+}
+
+.markdown-container code {
+    @apply bg-slate-100 px-3 py-1 rounded-md
+}
+
+.markdown-container ul {
+    @apply list-disc pl-8 my-2
+}
+
+.markdown-container li {
+    @apply font-segoe pl-2
+}

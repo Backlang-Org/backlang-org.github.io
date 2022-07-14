@@ -7,6 +7,7 @@ module.exports = {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      segoe: ["Segoe UI", "sans-serif"],
     },
   },
   plugins: [],
