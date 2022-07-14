@@ -20,15 +20,15 @@ const Header: Component = () => {
         </Link>
       </div>
       <nav class="flex w-1/3 items-center justify-center space-x-5">
-        <Link href="/getting-started" class="focus:outline-none">
+        <Link href="getting-started" class="focus:outline-none">
           <h3 class="font-roboto text-2xl font-thin hover:underline">
             Getting Started
           </h3>
         </Link>
-        <Link href="/learn" class="focus:outline-none">
+        <Link href="learn" class="focus:outline-none">
           <h3 class="font-roboto text-2xl font-thin hover:underline">Learn</h3>
         </Link>
-        <Link href="/docs" class="focus:outline-none">
+        <Link href="docs" class="focus:outline-none">
           <h3 class="font-roboto text-2xl font-thin hover:underline">Docs</h3>
         </Link>
       </nav>
