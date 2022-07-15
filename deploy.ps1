@@ -5,6 +5,9 @@ if (Test-Path $FolderName) {
 }
 
 yarn build
+
+copy CNAME dist/CNAME
+
 cd $FolderName
 
 git init
