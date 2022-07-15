@@ -17,7 +17,7 @@ const App: Component = () => {
       <Routes>
         <Route path="" component={Home} />
         <Route path="getting-started" component={GettingStarted} />
-        <Route path="docs" component={Docs} />
+        <Route path="docs/:doc?" component={Docs} />
         <Route path="playground" component={Playground} />
       </Routes>
     </div>
