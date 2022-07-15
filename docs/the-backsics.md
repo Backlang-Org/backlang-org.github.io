@@ -26,7 +26,7 @@ if you want to specify the type of a variable, you can easily do that
 let name: string = "Bob";
 ```
 
-A list of all backsic primitive datatypes can you find [here](https://github.com/Backseating-Committee-2k/Backlang/wiki/3.-Primitive-DataTypes).
+A list of all backsic primitive datatypes can you find [here](https://www.backlang.org/docs/primitive-datatypes).
 
 Variables by default are immutable, so you can't change their value. To make them mutable, define it like
 
@@ -36,7 +36,7 @@ let mut accelerator = 3.5;
 
 # If Statements
 
-If statements behave like how you would expect them to behave.
+If-statements behave like how you would expect them to behave.
 
 First, you write `if`, then the condition and at last one single statement or a block.
 Do it like so:
