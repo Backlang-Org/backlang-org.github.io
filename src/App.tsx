@@ -8,7 +8,6 @@ import Header from "./components/Header";
 const Home = lazy(() => import("./routes/Home"));
 const GettingStarted = lazy(() => import("./routes/GettingStarted"));
 const Docs = lazy(() => import("./routes/Docs"));
-const Playground = lazy(() => import("./routes/Playground"));
 
 const App: Component = () => {
   return (
@@ -18,7 +17,6 @@ const App: Component = () => {
         <Route path="" component={Home} />
         <Route path="getting-started" component={GettingStarted} />
         <Route path="docs/:doc?" component={Docs} />
-        <Route path="playground" component={Playground} />
       </Routes>
     </div>
   );
