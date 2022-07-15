@@ -8,7 +8,7 @@ import { Link, NavLink } from "solid-app-router";
 
 const Header: Component = () => {
   return (
-    <header class="flex w-full h-16 sticky mt-0 z-40 bg-slate-50 shadow-md px-14">
+    <header class="flex w-full h-16 sticky top-0 z-40 bg-slate-50 shadow-md border-b px-14">
       <div class="flex w-1/3 items-center justify-start">
         <Link href="/" class="focus:outline-none">
           <div class="flex items-center">
