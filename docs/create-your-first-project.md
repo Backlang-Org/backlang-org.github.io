@@ -46,5 +46,3 @@ When you are happy with your first Hello, World Program, type
 dotnet build
 ```
 for building it.
-
-> 🚨 BackLang can currently not compile function-bodies.
