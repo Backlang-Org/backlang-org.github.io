@@ -1,28 +1,21 @@
 import { useParams } from "solid-app-router";
-import { Component } from "solid-js";
+import { Component, createResource, createSignal } from "solid-js";
 import SolidMarkdown from "solid-markdown";
 
-const markdown = `
-# 1. Install DotNet 7 Preview
-
-- lol
-- this
-
-\`code\`
-
-* works
-* omg!
-
-Normal text
-
-### 3.
-
-## 2.`;
+const fetchText = async (doc: any) =>
+  (
+    await fetch(
+      `https://raw.githubusercontent.com/Backlang-Org/backlang-org.github.io/main/docs/${doc}.md`
+    )
+  ).text();
 
 const Docs: Component = () => {
   const params = useParams();
 
-  const docName = params.doc ?? "installation";
+  const doc = params.doc == "" ? "test" : params.doc;
+
+  const [docName, setDocName] = createSignal(doc);
+  const [markdown, { mutate, refetch }] = createResource(docName, fetchText);
 
   return (
     <main class="flex h-full">
@@ -34,11 +27,14 @@ const Docs: Component = () => {
           <h2 class="font-inter font-thin">Getting Started</h2>
         </button>
         <button class="flex w-full h-12 bg-slate-100 items-center pl-4 focus:outline-none">
-          <h2 class="font-inter font-thin">{docName}</h2>
+          <h2 class="font-inter font-thin">{doc}</h2>
         </button>
       </section>
       <div class="markdown-container bg-white w-full h-full">
-        <SolidMarkdown children={markdown} />
+        <span>{markdown.loading && "Loading..."}</span>
+        <div>
+          {!markdown.loading && <SolidMarkdown children={markdown()} />}
+        </div>
       </div>
     </main>
   );
