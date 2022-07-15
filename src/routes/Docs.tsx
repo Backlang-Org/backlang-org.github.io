@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "solid-app-router";
 import { Component, createResource, createSignal } from "solid-js";
-import SolidMarkdown from "solid-markdown";
 import DocumentEntryButton from "../components/DocumentEntryButton";
+import MarkdownContainer from "../components/MarkdownContainer";
 
 const fetchText = async (doc: any) =>
   (
@@ -38,12 +38,7 @@ const Docs: Component = () => {
         <DocumentEntryButton name="Macros" path="macros" />
         <DocumentEntryButton name="Accessibility" path="accessibility" />
       </section>
-      <div class="markdown-container bg-white mb-60 w-full h-full overflow-hidden">
-        <span>{markdown.loading && "Loading..."}</span>
-        <div>
-          {!markdown.loading && <SolidMarkdown children={markdown()} />}
-        </div>
-      </div>
+      <MarkdownContainer content={markdown()} />
     </main>
   );
 };
