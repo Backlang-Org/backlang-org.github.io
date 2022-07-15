@@ -1,4 +1,4 @@
-import { useParams } from "solid-app-router";
+import { useNavigate, useParams } from "solid-app-router";
 import { Component, createResource, createSignal } from "solid-js";
 import SolidMarkdown from "solid-markdown";
 import DocumentEntryButton from "../components/DocumentEntryButton";
@@ -13,7 +13,12 @@ const fetchText = async (doc: any) =>
 const Docs: Component = () => {
   const params = useParams();
 
-  const doc = params.doc == "" ? "create-your-first-project" : params.doc;
+  let doc = params.doc;
+  if (params.doc == "") {
+    const navigate = useNavigate();
+    doc = "create-your-first-project";
+    navigate(`/docs/${doc}`, { replace: true });
+  }
 
   const [docName, setDocName] = createSignal(doc);
   const [markdown, { mutate, refetch }] = createResource(docName, fetchText);
