@@ -41,3 +41,7 @@
 .markdown-container pre {
     @apply bg-slate-100 p-3 rounded-lg flex my-2
 }
+
+.markdown-container a {
+    @apply font-segoe text-blue-500 focus:outline-none
+}
