@@ -1,4 +1,4 @@
-import { Link, useParams } from "solid-app-router";
+import { NavLink, useParams } from "solid-app-router";
 import { Component, createResource, createSignal } from "solid-js";
 import SolidMarkdown from "solid-markdown";
 
@@ -18,19 +18,24 @@ const Docs: Component = () => {
   const [markdown, { mutate, refetch }] = createResource(docName, fetchText);
 
   return (
-    <main class="flex h-full">
-      <section class="flex flex-col w-96 h-full bg-slate-100">
-        <Link
-          class="flex w-full h-12 bg-slate-100 items-center pl-4 focus:outline-none"
+    <main class="flex min-h-full">
+      <section class="flex flex-col w-96 min-h-full bg-slate-100">
+        <NavLink
+          inactiveClass="flex w-full h-12 bg-slate-100 items-center pl-4 focus:outline-none"
+          activeClass="flex w-full h-12 bg-slate-50 items-center pl-4 shadow-inner focus:outline-none"
           href="/docs/create-your-first-project"
         >
           <h2 class="font-inter font-thin">Create your first project</h2>
-        </Link>
-        <button class="flex w-full h-12 bg-slate-50 items-center pl-4 shadow-inner focus:outline-none">
+        </NavLink>
+        <NavLink
+          inactiveClass="flex w-full h-12 bg-slate-100 items-center pl-4 focus:outline-none"
+          activeClass="flex w-full h-12 bg-slate-50 items-center pl-4 shadow-inner focus:outline-none"
+          href="/docs/getting-started"
+        >
           <h2 class="font-inter font-thin">Getting Started</h2>
-        </button>
+        </NavLink>
       </section>
-      <div class="markdown-container bg-white w-full h-full">
+      <div class="markdown-container bg-white mb-60 w-full h-full overflow-hidden">
         <span>{markdown.loading && "Loading..."}</span>
         <div>
           {!markdown.loading && <SolidMarkdown children={markdown()} />}
