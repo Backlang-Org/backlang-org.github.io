@@ -35,7 +35,7 @@
 }
 
 .markdown-container blockquote {
-    @apply border-l-4 border-slate-200 pl-3 py-1 my-2 text-slate-500 flex
+    @apply border-l-4 border-slate-100 pl-3 py-1 my-2 text-slate-500 flex
 }
 
 .markdown-container pre {
