@@ -2,11 +2,11 @@
 
 BackLang just provides two simple comment types:
 
-```rust
+```back
 //I am a single line comment
 ```
 
-```rust
+```back
 /*
 I am a block comment
 */
@@ -16,13 +16,13 @@ I am a block comment
 
 to define a new variable, just type
 
-```rust
+```back
 let age = 0;
 ```
 
 if you want to specify the type of a variable, you can easily do that
 
-```rust
+```back
 let name: string = "Bob";
 ```
 
@@ -30,7 +30,7 @@ A list of all backsic primitive datatypes can you find [here](https://www.backla
 
 Variables by default are immutable, so you can't change their value. To make them mutable, define it like
 
-```rust
+```back
 let mut accelerator = 3.5;
 ```
 
@@ -41,7 +41,7 @@ If-statements behave like how you would expect them to behave.
 First, you write `if`, then the condition and at last one single statement or a block.
 Do it like so:
 
-```rust
+```back
 if age >= 18 {
     // the person is older than 18 years
 }
@@ -49,7 +49,7 @@ if age >= 18 {
 
 When the condition is false, you can also run code with the `else` keyword:
 
-```rust
+```back
 if age >= 18 {
     // the person is older than 18 years
 } else {
@@ -66,7 +66,7 @@ if age >= 18 {
 Our Switch Statements got a lot of rework from normal switch statements you see in other languages.
 Normal features from the switch statement behave as expected:
 
-```java
+```back
 switch element {
     case value: { print("its the value"); break; }
     default: print("its not the value :c");
@@ -76,7 +76,7 @@ switch element {
 The example is great for one of our new features. Do you see how annoying it is that we had to use curly braces just because we need a break?
 For these things, we can just type break before our case like so:
 
-```java
+```back
 switch element {
     break case value: print("its the value");
     default: print("its not the value :c");
@@ -86,7 +86,7 @@ switch element {
 But look! What if we want an `if` clause after the first `case` so that it only gets executed when the first `case` failed and couldn't break.
 Yeah, _normally_ we would end the `switch`, then make the `if` statement and then put the `default` code in the `else` branch. But doesn't that sound complicated? Yes, cause it is! In Back, you can just put `if` statements into a `switch` statement and also break in them like so:
 
-```java
+```back
 switch element {
     break case value: print("its the value");
     break if myFunction(element): print("my function likes it :D");
@@ -96,7 +96,7 @@ switch element {
 
 Ok, but we got even more to show you. For example, you can check **two values** in one `case` by just typing:
 
-```java
+```back
 switch element {
     break case value: print("its the value");
     break if myFunction(element): print("my function likes it :D");
@@ -108,7 +108,7 @@ switch element {
 But what's when you want to check a method of the element? And the element changes? For example `switch (getRandomUUID()) { /*...*/ }`
 Of course we have a solution for that! The `when` keyword:
 
-```java
+```back
 switch element {
     break case value: print("its the value");
     break if myFunction(element): print("my function likes it :D");
@@ -127,7 +127,7 @@ switch element {
 Functions have a simple system. They can get called with arguments and execute their code, just like functions in other languages.
 
 A quick example:
-```go
+```back
 func hello() {
     println("Hello!"); // see that println is also a function with a string as argument?
 }
@@ -137,7 +137,7 @@ hello();
 
 When you want to pass arguments trough a function, do it like so:
 
-```go
+```back
 func greet(name: string) {
     println("Morning, " + name + "!");
 }
@@ -147,7 +147,7 @@ greet("Lixou");
 
 For a return type, you put an arrow before the block of code:
 
-```go
+```back
 func getMyLovedNumber() -> i32 {
     return 2;
 }
@@ -157,7 +157,7 @@ let lixousLovedNumber = getMyLovedNumber(); // this will be 2
 
 When you want to declare the function `static` or `private` or something like that, do that before our arrow:
 
-```go
+```back
 private static func getMyLovedNumber() -> i32 {
     return 2;
 }
@@ -167,7 +167,7 @@ let lixousLovedNumber = getMyLovedNumber(); // this will be 2
 
 For default values, just define them in the head of the function like so:
 
-```go
+```back
 private static func greet(name: string = "Oh no it's nameless :c") -> none {
     println("Morning, " + name + "!"); 
 }
@@ -177,7 +177,7 @@ greet(); // this will be "Morning, Oh no it's nameless :c!"
 
 Generic Arguments will be defined with the `where` keyword after the arguments
 
-```go
+```back
 private static func myCoolFunction(smth: T) where T: GameObject -> T {
     // code...
 }
@@ -185,7 +185,7 @@ private static func myCoolFunction(smth: T) where T: GameObject -> T {
 
 When you want to skip a default variable of a function, do it this way:
 
-```go
+```back
 func greet(name: string, thisIsUseless: bool = false) {
     println("Morning, " + name + "!"); 
 }
