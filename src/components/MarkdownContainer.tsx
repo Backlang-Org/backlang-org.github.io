@@ -1,9 +1,13 @@
 import { Component } from "solid-js";
 import { marked } from "marked";
 
-const MarkdownContainer: Component<{ content: string | undefined }> = (props: {
+interface MarkdownContainerProps {
   content: string | undefined;
-}) => {
+}
+
+const MarkdownContainer: Component<MarkdownContainerProps> = (
+  props: MarkdownContainerProps
+) => {
   const procs = (content: string | undefined) => {
     return content != undefined ? marked.parse(content) : "";
   };

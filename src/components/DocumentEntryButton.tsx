@@ -1,10 +1,14 @@
 import { NavLink } from "solid-app-router";
 import { Component } from "solid-js";
 
-const DocumentEntryButton: Component<{ name: string; path: string }> = (props: {
+interface DocumentEntryButtonProps {
   name: string;
   path: string;
-}) => {
+}
+
+const DocumentEntryButton: Component<DocumentEntryButtonProps> = (
+  props: DocumentEntryButtonProps
+) => {
   return (
     <NavLink
       inactiveClass="flex w-full h-12 bg-slate-100 items-center pl-4 focus:outline-none"
