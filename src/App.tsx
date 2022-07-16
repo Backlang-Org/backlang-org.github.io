@@ -11,7 +11,7 @@ const Docs = lazy(() => import("./routes/Docs"));
 
 const App: Component = () => {
   return (
-    <div class="h-screen bg-[#1E1F33]">
+    <div class="min-h-screen bg-[#1E1F33]">
       <Header />
       <Routes>
         <Route path="" component={Home} />
