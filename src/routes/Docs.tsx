@@ -46,7 +46,9 @@ const Docs: Component = () => {
         <DocumentEntryButton name="Macros" path="macros" />
         <DocumentEntryButton name="Accessibility" path="accessibility" />
       </section>
-      <MarkdownContainer content={markdown()} />
+      <section class="bg-white min-h-screen w-full">
+        <MarkdownContainer content={markdown()} />
+      </section>
     </main>
   );
 };

@@ -10,7 +10,7 @@ const MarkdownContainer: Component<{ content: string | undefined }> = (props: {
 
   return (
     <div
-      class="markdown-container bg-white mb-60 w-full h-full overflow-hidden"
+      class="markdown-container mb-24 w-full"
       innerHTML={procs(props.content)}
     ></div>
   );
