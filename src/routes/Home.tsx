@@ -8,7 +8,7 @@ const Home: Component = () => {
           Ihr Slogan kann hier stehen. WIRKLICH.
         </h1>
         <a
-          href="https://www.backlang.org/playground"
+          href="https://playground.backlang.org/"
           class="flex rounded-[1.25rem] mt-7 w-fit bg-green-500 hover:bg-green-400 px-4 py-2 focus:outline-none hover:scale-110 transition-all duration-150 ease-in-out"
           target="__blank"
         >
