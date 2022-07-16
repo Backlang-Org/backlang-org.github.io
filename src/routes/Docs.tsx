@@ -1,5 +1,10 @@
 import { useNavigate, useParams } from "solid-app-router";
-import { Component, createResource, createSignal } from "solid-js";
+import {
+  Component,
+  createEffect,
+  createResource,
+  createSignal,
+} from "solid-js";
 import DocumentEntryButton from "../components/DocumentEntryButton";
 import MarkdownContainer from "../components/MarkdownContainer";
 
@@ -11,16 +16,19 @@ const fetchText = async (doc: any) =>
   ).text();
 
 const Docs: Component = () => {
-  const params = useParams();
+  const [docName, setDocName] = createSignal("");
 
-  let doc = params.doc;
-  if (params.doc == "") {
-    const navigate = useNavigate();
-    doc = "create-your-first-project";
-    navigate(`/docs/${doc}`, { replace: true });
-  }
+  createEffect(() => {
+    const params = useParams();
+    if (params.doc == "") {
+      const navigate = useNavigate();
+      setDocName("create-your-first-project");
+      navigate(`/docs/${docName()}`, { replace: true });
+    } else {
+      setDocName(params.doc);
+    }
+  });
 
-  const [docName, setDocName] = createSignal(doc);
   const [markdown, { mutate, refetch }] = createResource(docName, fetchText);
 
   return (
