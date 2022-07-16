@@ -158,7 +158,7 @@ let lixousLovedNumber = getMyLovedNumber(); // this will be 2
 When you want to declare the function `static` or `private` or something like that, do that before our arrow:
 
 ```go
-func getMyLovedNumber() private static -> i32 {
+private static func getMyLovedNumber() -> i32 {
     return 2;
 }
 
@@ -168,11 +168,19 @@ let lixousLovedNumber = getMyLovedNumber(); // this will be 2
 For default values, just define them in the head of the function like so:
 
 ```go
-func greet(name: string = "Oh no it's nameless :c") private static -> none {
+private static func greet(name: string = "Oh no it's nameless :c") -> none {
     println("Morning, " + name + "!"); 
 }
 
 greet(); // this will be "Morning, Oh no it's nameless :c!"
+```
+
+Generic Arguments will be defined with the `where` keyword after the arguments
+
+```go
+private static func myCoolFunction(smth: T) where T: GameObject -> T {
+    // code...
+}
 ```
 
 When you want to skip a default variable of a function, do it this way:
