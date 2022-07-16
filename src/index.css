@@ -39,9 +39,25 @@
 }
 
 .markdown-container pre {
-    @apply bg-slate-100 p-3 rounded-lg flex my-2 overflow-x-scroll
+    @apply bg-slate-100 p-3 rounded-lg flex my-2 overflow-x-scroll shadow-md
 }
 
 .markdown-container a {
     @apply font-segoe text-blue-500 focus:outline-none
+}
+
+.markdown-container tr {
+    @apply bg-white
+}
+
+.markdown-container tr:nth-child(2n) {
+    @apply bg-gray-100
+}
+
+.markdown-container td {
+    @apply border px-2 py-0.5
+}
+
+.markdown-container th {
+    @apply border px-2 py-0.5
 }
