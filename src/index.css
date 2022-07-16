@@ -39,7 +39,7 @@
 }
 
 .markdown-container pre {
-    @apply bg-slate-100 p-3 rounded-lg flex my-2 overflow-x-scroll shadow-md
+    @apply bg-slate-100 p-3 rounded-lg flex my-2 overflow-x-auto shadow-md
 }
 
 .markdown-container a {
