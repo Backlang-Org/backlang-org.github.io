@@ -1,4 +1,4 @@
-Macros are code snippets that don't run at runtime, but at compiletime. That means, the code will modify or refactor while compiling. Macros with body has to use # as prefix.
+Macros are code snippets that don't run at runtime, but at compiletime. That means, the code will modify or refactor while compiling.
 
 # All predefined Macros
 
