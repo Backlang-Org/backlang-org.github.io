@@ -1,0 +1,59 @@
+.MarkdownContainer {
+    @apply p-5 mb-24 w-full
+}
+
+.MarkdownContainer h1 {
+    @apply text-[2em] pb-1 font-segoe font-semibold border-b mb-3 mt-6
+}
+
+.MarkdownContainer h2 {
+    @apply text-[1.5em] pb-1 font-segoe font-semibold border-b mb-3 mt-6
+}
+
+.MarkdownContainer h3 {
+    @apply text-[1.25em] pb-1 font-segoe font-semibold border-b mb-3 mt-6
+}
+
+.MarkdownContainer code {
+    @apply bg-slate-100 px-1.5 py-0.5 rounded-md font-thin text-sm
+}
+
+.MarkdownContainer ul {
+    @apply list-disc pl-8 my-2
+}
+
+.MarkdownContainer li {
+    @apply font-segoe pl-2
+}
+
+.MarkdownContainer p {
+    @apply font-segoe py-1
+}
+
+.MarkdownContainer blockquote {
+    @apply border-l-4 border-slate-100 pl-3 py-1 my-2 text-slate-500 flex
+}
+
+.MarkdownContainer pre {
+    @apply bg-slate-100 p-3 rounded-lg flex my-2 overflow-x-auto shadow-md
+}
+
+.MarkdownContainer a {
+    @apply font-segoe text-blue-500 focus:outline-none
+}
+
+.MarkdownContainer tr {
+    @apply bg-white
+}
+
+.MarkdownContainer tr:nth-child(2n) {
+    @apply bg-gray-100
+}
+
+.MarkdownContainer td {
+    @apply border px-2 py-0.5
+}
+
+.MarkdownContainer th {
+    @apply border px-2 py-0.5
+}

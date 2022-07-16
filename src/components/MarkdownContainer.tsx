@@ -1,6 +1,7 @@
 import { Component } from "solid-js";
 import { marked } from "marked";
 import { highlight, languages } from "prismjs";
+import styles from "./MarkdownContainer.module.css";
 
 languages["back"] = {
   comment: {
@@ -48,7 +49,7 @@ const MarkdownContainer: Component<MarkdownContainerProps> = (
 
   return (
     <div
-      class="markdown-container mb-24 w-full"
+      class={styles.MarkdownContainer}
       innerHTML={procs(props.content)}
     ></div>
   );
