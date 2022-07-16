@@ -1,6 +1,6 @@
 # Comments
 
-BackLang comes with just two simple comment types:
+BackLang comes with just two simple comment types
 
 ```back
 //I am a single line comment
