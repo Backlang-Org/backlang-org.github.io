@@ -33,7 +33,7 @@ const Docs: Component = () => {
 
   return (
     <main class="flex min-h-full">
-      <section class="flex flex-col w-96 min-h-full bg-slate-100">
+      <section class="fixed flex-col w-80 min-h-full bg-slate-100">
         <DocumentEntryButton
           name="Create your first project"
           path="create-your-first-project"
@@ -46,7 +46,7 @@ const Docs: Component = () => {
         <DocumentEntryButton name="Macros" path="macros" />
         <DocumentEntryButton name="Accessibility" path="accessibility" />
       </section>
-      <section class="bg-white min-h-screen w-full">
+      <section class="bg-white min-h-screen w-full ml-80">
         <MarkdownContainer content={markdown()} />
       </section>
     </main>
