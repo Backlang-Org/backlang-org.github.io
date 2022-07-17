@@ -22,7 +22,7 @@ languages["back"] = {
   },
   keyword: [
     /\b(?:inline|this|const|global|in|continue|return|where|type|mut|import|module|using|as|struct|class|interface|let|prop|get|set|implement|of|for|switch|case|break|when|if|else|match|with|while|static|operator|private|public|abstract|override|func|constructor|destructor|enum|union|bitfield|default|sizeof|and|or)\b/,
-    /\b(?:bool|char|obj|f(?:32|64)|[ui](?:8|16|32|64)|string|none)\b/,
+    /\b(?:bool|char|string|obj|f(?:16|32|64)|[ui](?:8|16|32|64)|none)\b/,
   ],
 };
 
