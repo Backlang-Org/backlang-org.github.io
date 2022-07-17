@@ -35,14 +35,6 @@ const Header: Component = () => {
         >
           <h3 class="font-roboto text-2xl font-thin">Learn</h3>
         </NavLink>
-        <NavLink
-          href="docs"
-          class="focus:outline-none"
-          inactiveClass="focus:outline-none hover:underline"
-          activeClass="focus:outline-none underline"
-        >
-          <h3 class="font-roboto text-2xl font-thin">Docs</h3>
-        </NavLink>
       </nav>
       <div class="flex w-1/3 items-center justify-end">
         <a

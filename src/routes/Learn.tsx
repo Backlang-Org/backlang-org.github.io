@@ -59,6 +59,7 @@ const Docs: Component = () => {
           />
         </DocumentEntryButton>
       </section>
+      
       <section class="bg-white min-h-screen w-full ml-80">
         <MarkdownContainer content={markdown()} />
       </section>
