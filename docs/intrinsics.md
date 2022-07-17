@@ -1,6 +1,6 @@
 # Intrinsics
 
-An intrinsic is an instruction that compiles direktly to the targetet platform. In Backlang you can specify which block of instrinsic instructions are compiled based on the target. Every intrinsic instruction is a simple function call without return value.
+An intrinsic is an instruction that compiles directly to the targetet platform. In Backlang you can specify which block of instrinsic instructions are compiled based on the target. Every intrinsic instruction is a simple function call without return value.
 
 ```back
 inline(dotnet) {
