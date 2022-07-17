@@ -8,4 +8,4 @@ inline(dotnet) {
 }
 ```
 
-A List of available intrinsics are available for (Dotnet)[/docs/intrinsics_dotnet] and (Bs2K)[/docs/intrinsics_bs2k]
+A List of available intrinsics are available for [Dotnet](/docs/intrinsics_dotnet) and [Bs2K](/docs/intrinsics_bs2k)
