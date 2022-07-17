@@ -1,4 +1,8 @@
+The Backlang ecosystem is integrated into msbuild and can use all features. To start with Backlang follow this tutorial.
+
 This is a short tutorial for how to set up your first Hello World Project in Back.
+
+## Preparation
 
 # 1. Install DotNet 7 Preview
 > 🚀 If you already installed the DotNet 7 Preview, you can skip this step.
@@ -11,11 +15,9 @@ dotnet --list-sdks
 ```
 in the terminal.
 
-When everything worked fine, you should see something like `7.0.xxx-preview.x.xxxxx.x [PATH_TO_SDK]`
-
 If your current version (`dotnet --version`) isn't the dotnet 7 preview, look how to change your current dotnet sdk version.
 
-# 2. Install the Backlang templates for DotNet
+# 2. Install the Backlang templates for .Net
 
 For installing the templates, just type
 ```bash
@@ -24,25 +26,35 @@ dotnet new --install Backlang.Templates
 
 > 💡 For updating the templates, you can rerun this command or type `dotnet new update`
 
-# 3. Creating your first Project
+# 3. Creating your first project
 
-First, make sure that you are in an empty folder. The template will put all files at the folder your terminal is currently.
-
-Then, type
+Create a new empty folder and type in terminal
 ```bash
-dotnet new backconsole # Basic Hello World
-# or
-dotnet new backlib # Simple Library Template
+dotnet new backconsole
 ```
 
 # 4. Coding and Building
 
 Start coding in the newly generated `Program.back` file.
 
-> 💡 If you are using VS Code, you can install our [official VS Code Extension](https://marketplace.visualstudio.com/items?itemName=furesoft.back)
+> 💡You can use any texteditor but for better experience install our [official VS Code Extension](https://marketplace.visualstudio.com/items?itemName=furesoft.back) with syntax highlighting and code completion.
 
-When you are happy with your first Hello, World Program, type
+To start the compilation progress write in terminal
 ```bash
 dotnet build
 ```
-for building it.
+
+> 💡If you use another target then .Net you have to figure out by yourself how to run it
+
+To run the generated .Net programm
+```bash
+dotnet TestConsole.dll
+```
+
+# 5. Running
+
+A program can be compiled an executet in the same step with
+
+```bash
+dotnet run
+```
