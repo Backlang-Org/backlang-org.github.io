@@ -1,7 +1,5 @@
 The Backlang ecosystem is integrated into msbuild and can use all features. To start with Backlang follow this tutorial.
 
-This is a short tutorial for how to set up your first Hello World Project in Back.
-
 ## Preparation
 
 # 1. Install DotNet 7 Preview
