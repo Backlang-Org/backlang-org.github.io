@@ -1,8 +1,8 @@
 The Backlang ecosystem is integrated into msbuild and can use all features. To start with Backlang follow this tutorial.
 
-## Preparation
+# Preparation
 
-# 1. Install DotNet 7 Preview
+## 1. Install DotNet 7 Preview
 > 🚀 If you already installed the DotNet 7 Preview, you can skip this step.
 
 Download the installer or binary of the newest preview or release for your target from the [.NET 7.0 Download Page](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
@@ -15,7 +15,7 @@ in the terminal.
 
 If your current version (`dotnet --version`) isn't the dotnet 7 preview, look how to change your current dotnet sdk version.
 
-# 2. Install the Backlang templates for .Net
+## 2. Install the Backlang templates for .Net
 
 For installing the templates, just type
 ```bash
@@ -24,14 +24,14 @@ dotnet new --install Backlang.Templates
 
 > 💡 For updating the templates, you can rerun this command or type `dotnet new update`
 
-# 3. Creating your first project
+## 3. Creating your first project
 
 Create a new empty folder and type in terminal
 ```bash
 dotnet new backconsole
 ```
 
-# 4. Coding and Building
+## 4. Coding and Building
 
 Start coding in the newly generated `Program.back` file.
 
@@ -49,7 +49,7 @@ To run the generated .Net programm
 dotnet TestConsole.dll
 ```
 
-# 5. Running
+## 5. Running
 
 A program can be compiled an executet in the same step with
 
