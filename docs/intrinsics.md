@@ -4,7 +4,21 @@ An intrinsic is an instruction that compiles direktly to the targetet platform. 
 
 ```back
 inline(dotnet) {
+    ld_str("Hello {0}");
     ldc_i4(42);
+    call(System.Console::WriteLine(string, obj));
+}
+```
+
+```back
+inline(bs2k) {
+    copy(R1, 1);
+    label("loop");
+        copy(R2, 64);
+        add(R1, R2, R3);
+        push(R3)
+        call(std::put_char(char));
+        jump("loop");
 }
 ```
 
