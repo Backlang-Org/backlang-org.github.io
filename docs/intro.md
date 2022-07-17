@@ -5,6 +5,6 @@ Backlang's main focus is on reducing code duplicates and code by context. The ma
 
 Backlang can be used functional or OOP. 
 
-## Why a new langauge?
+## Why a new language?
 
 C# is a really good language but has a lack of code reduction. F# has really nice features but is less intuitive. So I have decided to build a new language to fill the gap between C#, F# and added a macro system for code reduction and the ability to make with macros custom language constructs to hide complex problems in a Domain Specific Language. There is also the possibility of writing inline assembly to use runtime features that are not yet available on the language itself.
