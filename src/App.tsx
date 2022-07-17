@@ -7,7 +7,7 @@ import Header from "./components/Header";
 
 const Home = lazy(() => import("./routes/Home"));
 const GettingStarted = lazy(() => import("./routes/GettingStarted"));
-const Docs = lazy(() => import("./routes/Docs"));
+const Learn = lazy(() => import("./routes/Learn"));
 
 const App: Component = () => {
   return (
@@ -16,7 +16,7 @@ const App: Component = () => {
       <Routes>
         <Route path="" component={Home} />
         <Route path="getting-started" component={GettingStarted} />
-        <Route path="docs/*doc" component={Docs} />
+        <Route path="learn/*doc" component={Learn} />
       </Routes>
     </div>
   );
