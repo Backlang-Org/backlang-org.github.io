@@ -42,7 +42,7 @@ To start the compilation progress write in terminal
 dotnet build
 ```
 
-> 💡If you use another target then .Net you have to figure out by yourself how to run it
+> 💡If you use another target than .Net you have to figure out by yourself how to run it
 
 To run the generated .Net programm
 ```bash
@@ -51,7 +51,7 @@ dotnet TestConsole.dll
 
 ## 5. Running
 
-A program can be compiled an executet in the same step with
+A program can be compiled an executed in the same step with
 
 ```bash
 dotnet run
