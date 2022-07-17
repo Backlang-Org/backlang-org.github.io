@@ -22,7 +22,7 @@ const Docs: Component = () => {
     const params = useParams();
     if (params.doc == "") {
       const navigate = useNavigate();
-      setDocName("create-your-first-project");
+      setDocName("intro");
       navigate(`/docs/${docName()}`, { replace: true });
     } else {
       setDocName(params.doc);
@@ -34,6 +34,10 @@ const Docs: Component = () => {
   return (
     <main class="flex min-h-full">
       <section class="fixed flex-col w-80 min-h-full bg-slate-100">
+        <DocumentEntryButton
+          name="Introduction"
+          path="intro"
+        />
         <DocumentEntryButton
           name="Create your first project"
           path="create-your-first-project"
