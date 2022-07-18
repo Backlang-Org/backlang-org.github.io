@@ -195,6 +195,22 @@ greet(name = "Peter"); // we skip the bool "thisIsUseless" and jump directly to 
 
 Optional arguments has to be after normal arguments
 
+# Properties
+
+Properties are things that behave like fields but can obtain a getter and setter method.
+
+They're built up like so
+
+```back
+public prop AmICool { get; set; }
+```
+
+Individual getter and setter functions can have an other accessibility than the base from the property.
+
+```back
+protected prop MyProp { get; private set; } // this makes a protected getter and a private setter.
+```
+
 # Structs
 
 ## Implementations
