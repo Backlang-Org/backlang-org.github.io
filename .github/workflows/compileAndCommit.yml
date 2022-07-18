@@ -35,8 +35,7 @@ jobs:
           cmd: build # will run `yarn build` command
       - name: Commiting to gh-pages branch
         run: |
-          chmod -R 777 dist
-          cp -f CNAME dist/CNAME
+          cp -f ./CNAME ./dist/CNAME
           cd dist
           git init
           git checkout -b main
