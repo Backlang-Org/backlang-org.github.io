@@ -32,12 +32,12 @@ const Docs: Component = () => {
   const [markdown, { mutate, refetch }] = createResource(docName, fetchText);
 
   return (
-    <main class="flex min-h-full">
+    <main class="flex relative min-h-full">
       <section class="fixed flex-col w-80 min-h-full bg-slate-100">
         {/*documentEntriesPlace*/}
       </section>
 
-      <section class="bg-white min-h-screen w-full ml-80">
+      <section class="relative bg-white min-h-screen w-full left-80">
         <MarkdownContainer content={markdown()} />
       </section>
     </main>
