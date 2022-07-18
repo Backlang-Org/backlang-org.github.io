@@ -5,7 +5,7 @@
     "children": [
       {
         "name": "The Compiler",
-        "path": "compiler"
+        "path": "intro_compiler"
       }
     ]
   },
