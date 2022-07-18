@@ -2,10 +2,12 @@
   {
     "name": "Introduction",
     "path": "intro",
-	"children": [
-		"name": "The Compiler",
-		"path": "compiler"
-	]
+    "children": [
+      {
+        "name": "The Compiler",
+        "path": "compiler"
+      }
+    ]
   },
   {
     "name": "Getting Started",
