@@ -26,7 +26,7 @@ if you want to specify the type of a variable, you can easily do that with a `:`
 let name: string = "Bob";
 ```
 
-A list of all backsic primitive datatypes can you find [here](/docs/primitive-datatypes).
+A list of all backsic primitive datatypes can you find [here](/learn/primitive-datatypes).
 
 Variables by default are immutable, so you can't change their value. To make them mutable, define it with `mut`
 
