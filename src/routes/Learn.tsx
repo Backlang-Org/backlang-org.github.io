@@ -25,7 +25,7 @@ const Docs: Component = () => {
     if (params.doc == "") {
       const navigate = useNavigate();
       setDocName("intro");
-      navigate(`/docs/${docName()}`, { replace: true });
+      navigate(`/learn/${docName()}`, { replace: true });
     } else {
       setDocName(params.doc);
     }
@@ -59,7 +59,7 @@ const Docs: Component = () => {
           />
         </DocumentEntryButton>
       </section>
-      
+
       <section class="bg-white min-h-screen w-full ml-80">
         <MarkdownContainer content={markdown()} />
       </section>

@@ -10,7 +10,7 @@ interface DocumentEntryButtonProps {
 const DocumentEntryButton: Component<DocumentEntryButtonProps> = (
   props: DocumentEntryButtonProps
 ) => {
-  const href = `/docs/${props.path}`;
+  const href = `/learn/${props.path}`;
 
   const location = useLocation();
   const to = useResolvedPath(() => href);
@@ -32,7 +32,7 @@ const DocumentEntryButton: Component<DocumentEntryButtonProps> = (
         inactiveClass="flex w-full h-12 bg-slate-100 items-center pl-4 focus:outline-none"
         activeClass="flex w-full h-12 bg-slate-50 items-center pl-4 shadow-inner focus:outline-none"
         end={true}
-        href={`/docs/${props.path}`}
+        href={`/learn/${props.path}`}
       >
         <h2 class="font-inter font-thin">{props.name}</h2>
       </NavLink>
@@ -50,7 +50,7 @@ export const ChildDocumentEntryButton: Component<DocumentEntryButtonProps> = (
     <NavLink
       inactiveClass="flex w-full h-10 bg-slate-100 items-center pl-10 focus:outline-none"
       activeClass="flex w-full h-10 bg-slate-50 items-center pl-10 shadow-inner focus:outline-none"
-      href={`/docs/${props.path}`}
+      href={`/learn/${props.path}`}
     >
       <h2 class="font-inter font-thin">{props.name}</h2>
     </NavLink>
