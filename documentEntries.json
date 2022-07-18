@@ -1,15 +1,19 @@
 [
   {
     "name": "Introduction",
-    "path": "intro"
+    "path": "intro",
+	"children": [
+		"name": "The Compiler",
+		"path": "compiler"
+	]
   },
   {
-    "name": "Create your first project",
-    "path": "create-your-first-project"
+    "name": "Getting Started",
+    "path": "getting-started"
   },
   {
-    "name": "The Backsics",
-    "path": "the-backsics"
+    "name": "The Basics",
+    "path": "the-basics"
   },
   {
     "name": "Primitive DataTypes",
