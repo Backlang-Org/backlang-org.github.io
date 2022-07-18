@@ -35,14 +35,14 @@ dotnet new backconsole
 
 Start coding in the newly generated `Program.back` file.
 
-> 💡You can use any texteditor but for better experience install our [official VS Code Extension](https://marketplace.visualstudio.com/items?itemName=furesoft.back) with syntax highlighting and code completion.
+> 💡 You can use any texteditor but for better experience install our [official VS Code Extension](https://marketplace.visualstudio.com/items?itemName=furesoft.back) with syntax highlighting and code completion.
 
 To start the compilation progress write in terminal
 ```bash
 dotnet build
 ```
 
-> 💡If you use another target than .Net you have to figure out by yourself how to run it
+> 💡 If you use another target than .Net you have to figure out by yourself how to run it
 
 To run the generated .Net programm
 ```bash
