@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Introduction",
+    "path": "intro"
+  },
+  {
+    "name": "Create your first project",
+    "path": "create-your-first-project"
+  },
+  {
+    "name": "The Backsics",
+    "path": "the-backsics"
+  },
+  {
+    "name": "Primitive DataTypes",
+    "path": "primitive-datatypes"
+  },
+  {
+    "name": "Macros",
+    "path": "macros"
+  },
+  {
+    "name": "Accessibility",
+    "path": "accessibility"
+  },
+  {
+    "name": "Intrinsics",
+    "path": "intrinsics",
+    "children": [
+      {
+        "name": "Dotnet Intrinsics",
+        "path": "intrinsics_dotnet"
+      },
+      {
+        "name": "Bs2K Intrinsics",
+        "path": "intrinsics_bs2k"
+      }
+    ]
+  }
+]

@@ -5,9 +5,7 @@ import {
   createResource,
   createSignal,
 } from "solid-js";
-import DocumentEntryButton, {
-  ChildDocumentEntryButton,
-} from "../components/DocumentEntryButton";
+//documentEntriesImport
 import MarkdownContainer from "../components/MarkdownContainer";
 
 const fetchText = async (doc: any) =>
@@ -36,28 +34,7 @@ const Docs: Component = () => {
   return (
     <main class="flex min-h-full">
       <section class="fixed flex-col w-80 min-h-full bg-slate-100">
-        <DocumentEntryButton name="Introduction" path="intro" />
-        <DocumentEntryButton
-          name="Create your first project"
-          path="create-your-first-project"
-        />
-        <DocumentEntryButton name="The Backsics" path="the-backsics" />
-        <DocumentEntryButton
-          name="Primitive DataTypes"
-          path="primitive-datatypes"
-        />
-        <DocumentEntryButton name="Macros" path="macros" />
-        <DocumentEntryButton name="Accessibility" path="accessibility" />
-        <DocumentEntryButton name="Intrinsics" path="intrinsics">
-          <ChildDocumentEntryButton
-            name="Dotnet Intrinsics"
-            path="intrinsics_dotnet"
-          />
-          <ChildDocumentEntryButton
-            name="Bs2K Intrinsics"
-            path="intrinsics_bs2k"
-          />
-        </DocumentEntryButton>
+        {/*documentEntriesPlace*/}
       </section>
 
       <section class="bg-white min-h-screen w-full ml-80">
