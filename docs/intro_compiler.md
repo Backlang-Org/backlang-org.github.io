@@ -1,3 +1,3 @@
 # The Compiler
 
-<img src="https://github.com/Backlang-Org/backlang-org.github.io/blob/main/src/assets/Backlang-Compiler%20Structure.png" />
+<img src="https://raw.githubusercontent.com/Backlang-Org/backlang-org.github.io/main/docs/assets/Backlang-Compiler_Structure.png" />
