@@ -1,3 +1,3 @@
 # The Compiler
 
-<img src="Backlang-Compiler Structure.png" />
+<img src="https://www.backlang.org/assets/Backlang-Compiler_Structure.png" />
