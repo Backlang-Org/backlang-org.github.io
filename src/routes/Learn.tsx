@@ -37,7 +37,7 @@ const Docs: Component = () => {
         {/*documentEntriesPlace*/}
       </section>
 
-      <section class="relative bg-white min-h-screen w-full left-80">
+      <section class="flex bg-white min-h-screen w-full ml-80">
         <MarkdownContainer content={markdown()} />
       </section>
     </main>
