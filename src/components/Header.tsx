@@ -4,11 +4,12 @@ import logo from "../logo.svg";
 
 import { AiOutlineGithub } from "solid-icons/ai";
 import { BsDiscord } from "solid-icons/bs";
+import { BiLogoReddit } from "solid-icons/bi";
 import { Link, NavLink } from "solid-app-router";
 
 const Header: Component = () => {
   return (
-    <header class="flex w-full h-16 sticky top-0 z-40 bg-slate-50 shadow-md border-b px-14">
+    <header class="flex w-full h-16 sticky top-0 z-40 bg-slate-50 shadow-md border-b px-[5.5rem]">
       <div class="flex w-1/3 items-center justify-start">
         <Link href="/" class="focus:outline-none">
           <div class="flex items-center">
@@ -37,6 +38,13 @@ const Header: Component = () => {
         </NavLink>
       </nav>
       <div class="flex w-1/3 items-center justify-end">
+        <a
+          class="flex items-center overflow-hidden cursor-pointer h-16"
+          href="https://www.reddit.com/r/backlang/"
+          target="__blank"
+        >
+          <BiLogoReddit size={60} class="p-2 pr-3" color="#000000" />
+        </a>
         <a
           class="flex items-center overflow-hidden cursor-pointer h-16"
           href="https://discord.gg/36SsV3vy4p"
