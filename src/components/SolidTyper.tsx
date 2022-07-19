@@ -3,6 +3,7 @@ import { Component, createSignal } from "solid-js";
 interface SolidTyperProps {
   texts: string[];
   baseText?: string | undefined;
+  startDelay: number;
   holdTime: number;
   changeTime: number;
   stepTime: number;
@@ -10,7 +11,7 @@ interface SolidTyperProps {
 
 const SolidTyper: Component<SolidTyperProps> = (props: SolidTyperProps) => {
   const [text, setText] = createSignal("");
-  let currentText = 0;
+  let currentText = Math.floor(Math.random() * props.texts.length);
   let currentIndex = 0;
 
   const add = () => {

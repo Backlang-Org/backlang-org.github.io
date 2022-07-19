@@ -14,6 +14,7 @@ const Home: Component = () => {
             "oop",
             "code reducing",
           ]}
+          startDelay={500}
           stepTime={100}
           holdTime={1500}
           changeTime={600}
