@@ -3,7 +3,6 @@
 To write a custom macro you have to provide an annotation to it to tell on which type of node you want to match.
 
 ```back
-
 @MacroInfo("A macro for writing Tests", "test", MacroMode.Call)
 macro MyTestMacro(node : LNode, context : IMacroContext) {
     let testName = node.Args[0];
@@ -15,7 +14,6 @@ macro MyTestMacro(node : LNode, context : IMacroContext) {
         }
     }
 }
-
 ```
 
 The macro called
