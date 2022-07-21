@@ -26,14 +26,12 @@
     "path": "macros",
 	"children": [
 		{
-			{
-				"name": "Predefined Macros",
-				"path": "macros_predefined"
-			},
-			{
-				"name": "Writing Custom Macros",
-				"path": "macros_custom"
-			}
+			"name": "Predefined Macros",
+			"path": "macros_predefined"
+		},
+		{
+			"name": "Writing Custom Macros",
+			"path": "macros_custom"
 		}
 	]
   },
