@@ -202,13 +202,13 @@ Properties are things that behave like fields but can obtain a getter and setter
 They're built up like so
 
 ```back
-public prop AmICool { get; set; }
+public prop AmICool: bool { get; set; }
 ```
 
 Individual getter and setter functions can have an other accessibility than the base from the property.
 
 ```back
-protected prop MyProp { get; private set; } // this makes a protected getter and a private setter.
+protected prop MyProp: obj { get; private set; } // this makes a protected getter and a private setter.
 ```
 
 # Structs
