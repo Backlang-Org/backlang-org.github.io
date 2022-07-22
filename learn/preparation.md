@@ -12,11 +12,10 @@ To verify if you have installed the right runtime use `dotnet --version`
 
 ## 2. Tooling
 
-To have an easier start for a new project install the official template pack with `dotnet new --install Backlang.Templates`. To create a new project use `dotnet new backconsole`. 
+To have an easier start install the Backlang-Manager `dotnet tool install --global Backlang-Manager`. This application can easily install the backlang sdk, templates and the vscode extension for you. For installing the complete toolset `backlang install --with-extension`
 
-> 💡 To update templates use `dotnet new update`
+> 💡 To Install the sdk you need admin rights.
 
-> 💡 You can use any texteditor but for better experience install our [official VS Code Extension](https://marketplace.visualstudio.com/items?itemName=furesoft.back) with syntax highlighting and code completion.
 
 ## 3. Building and Running
 
