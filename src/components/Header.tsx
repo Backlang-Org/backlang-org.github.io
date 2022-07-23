@@ -1,6 +1,6 @@
 import type { Component } from "solid-js";
 
-import logo from "../logo.svg";
+import logo from "../assets/logoNoShadow.svg";
 
 import { AiOutlineGithub } from "solid-icons/ai";
 import { BsDiscord } from "solid-icons/bs";
