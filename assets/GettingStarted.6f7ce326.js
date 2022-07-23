@@ -1,0 +1,1 @@
+import{t}from"./index.7dbc2f24.js";const e=t('<main class="overflow-hidden"><div class="flex flex-col h-max mt-52 items-center justify-center"><span class="text-9xl">\u{1F6A7}</span><span class="text-3xl mt-7 font-roboto text-slate-50">This is still under Baustelle.</span></div></main>'),l=()=>e.cloneNode(!0);export{l as default};
