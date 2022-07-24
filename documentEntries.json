@@ -52,6 +52,10 @@
 			"path": "macros_predefined"
 		},
 		{
+			"name": "The Syntax Tree",
+			"path": "macros_the_tree"
+		},
+		{
 			"name": "Writing Custom Macros",
 			"path": "macros_custom"
 		}
