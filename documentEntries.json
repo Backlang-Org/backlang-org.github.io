@@ -15,7 +15,29 @@
   },
   {
     "name": "The Basics",
-    "path": "the-basics"
+    "path": "the-basics",
+	"children": [
+      {
+        "name": "Functions",
+        "path": "the-basics_functions"
+      },
+	  {
+        "name": "Variables",
+        "path": "the-basics_variables"
+      },
+	  {
+        "name": "Conditional Flow",
+        "path": "the-basics_control_flow_conditional"
+      },
+	  {
+        "name": "Loops",
+        "path": "the-basics_control_flow_loops"
+      },
+	  {
+        "name": "Working With Data",
+        "path": "the-basics_data"
+      }
+    ]
   },
   {
     "name": "Primitive DataTypes",
