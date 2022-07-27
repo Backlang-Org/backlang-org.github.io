@@ -5,7 +5,7 @@
     "children": [
       {
         "name": "The Compiler",
-        "path": "intro_compiler"
+        "path": "compiler"
       }
     ]
   },
@@ -16,26 +16,26 @@
   {
     "name": "The Basics",
     "path": "the-basics",
-	"children": [
+    "children": [
       {
         "name": "Functions",
-        "path": "the-basics_functions"
+        "path": "functions"
       },
-	  {
+      {
         "name": "Variables",
-        "path": "the-basics_variables"
+        "path": "variables"
       },
-	  {
+      {
         "name": "Conditional Flow",
-        "path": "the-basics_control_flow_conditional"
+        "path": "control_flow_conditional"
       },
-	  {
+      {
         "name": "Loops",
-        "path": "the-basics_control_flow_loops"
+        "path": "control_flow_loops"
       },
-	  {
+      {
         "name": "Working With Data",
-        "path": "the-basics_data"
+        "path": "data"
       }
     ]
   },
@@ -46,38 +46,38 @@
   {
     "name": "Extended",
     "path": "extended",
-	"children": [
-		{
-			"name": "Conditional",
-			"path": "extended_conditional"
-		},
-		{
-			"name": "Unions",
-			"path": "extended_unions"
-		},
-		{
-			"name": "OOP",
-			"path": "extended_oop"
-		}
-	]
+    "children": [
+      {
+        "name": "Conditional",
+        "path": "conditional"
+      },
+      {
+        "name": "Unions",
+        "path": "unions"
+      },
+      {
+        "name": "OOP",
+        "path": "oop"
+      }
+    ]
   },
   {
     "name": "Macros",
     "path": "macros",
-	"children": [
-		{
-			"name": "Predefined Macros",
-			"path": "macros_predefined"
-		},
-		{
-			"name": "The Syntax Tree",
-			"path": "macros_the_tree"
-		},
-		{
-			"name": "Writing Custom Macros",
-			"path": "macros_custom"
-		}
-	]
+    "children": [
+      {
+        "name": "Predefined Macros",
+        "path": "predefined"
+      },
+      {
+        "name": "The Syntax Tree",
+        "path": "the_tree"
+      },
+      {
+        "name": "Writing Custom Macros",
+        "path": "custom"
+      }
+    ]
   },
   {
     "name": "Accessibility",
@@ -89,11 +89,11 @@
     "children": [
       {
         "name": "Dotnet Intrinsics",
-        "path": "intrinsics_dotnet"
+        "path": "dotnet"
       },
       {
         "name": "Bs2K Intrinsics",
-        "path": "intrinsics_bs2k"
+        "path": "bs2k"
       }
     ]
   }

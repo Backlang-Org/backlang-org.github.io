@@ -31,19 +31,32 @@ function generateButtons(): string {
 
   const json = JSON.parse(data);
 
-  return generateButton(json, "DocumentEntryButton", true);
+  return generateButton(json, "DocumentEntryButton", "", 4);
 }
 
-function generateButton(json: any, elem: string, hasChildren: boolean): string {
+function generateButton(
+  json: any,
+  elem: string,
+  basePath: string,
+  indent: number
+): string {
   let result = "";
 
   if (json == null) return result;
 
   json.forEach((entry: any) => {
+    let hasChildren = entry.children != undefined;
     result = result.concat(
-      `<${elem} name="${entry.name}" path="${entry.path}">${
+      `<${elem} name="${entry.name}" path="${basePath}${
+        entry.path
+      }" indent={${indent}}>${
         hasChildren
-          ? generateButton(entry.children, "ChildDocumentEntryButton", false)
+          ? generateButton(
+              entry.children,
+              "ChildDocumentEntryButton",
+              `${basePath}${entry.path}/`,
+              indent + 6
+            )
           : ""
       }</${elem}>`
     );
