@@ -22,4 +22,4 @@ inline(bs2k) {
 }
 ```
 
-A List of available intrinsics are available for [Dotnet](/learn/intrinsics_dotnet) and [Bs2K](/learn/intrinsics_bs2k)
+A List of available intrinsics are available for [Dotnet](/learn/intrinsics_dotnet)
