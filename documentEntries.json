@@ -44,6 +44,24 @@
     "path": "primitive-datatypes"
   },
   {
+    "name": "Extended",
+    "path": "extended",
+	"children": [
+		{
+			"name": "Conditional",
+			"path": "extended_conditional"
+		},
+		{
+			"name": "Unions",
+			"path": "extended_unions"
+		},
+		{
+			"name": "OOP",
+			"path": "extended_oop"
+		}
+	]
+  },
+  {
     "name": "Macros",
     "path": "macros",
 	"children": [
