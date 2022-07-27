@@ -9,7 +9,7 @@ export default defineConfig({
     documentEntriesPlugin(),
     solidPlugin(),
     prismjsPlugin({
-      languages: ["bash"],
+      languages: ["bash", "ebnf"],
       plugins: [],
       theme: "default",
       css: true,
