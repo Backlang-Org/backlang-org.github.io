@@ -57,7 +57,17 @@
       },
       {
         "name": "OOP",
-        "path": "oop"
+        "path": "oop",
+        "children": [
+          {
+            "name": "Classes",
+            "path": "classes"
+          },
+          {
+            "name": "Interfaces",
+            "path": "interfaces"
+          }
+        ]
       }
     ]
   },
@@ -90,9 +100,23 @@
       {
         "name": "Dotnet Intrinsics",
         "path": "dotnet"
+      }
+    ]
+  },
+  {
+    "name": "Plugins",
+    "path": "plugins",
+    "children": [
+      {
+        "name": "Custom Plugins",
+        "path": "custom_plugins"
       },
       {
-        "name": "Bs2K Intrinsics",
+        "name": "Intrinsics",
+        "path": "intrinsics"
+      },
+      {
+        "name": "Bs2K Sample Plugin",
         "path": "bs2k"
       }
     ]
