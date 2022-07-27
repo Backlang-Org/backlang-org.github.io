@@ -6,9 +6,9 @@ name: Compile and Commit to Pages Branch
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,10 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
+
       - uses: actions/cache@v3
         with:
-          path: '**/node_modules'
+          path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Installing yarn dependencies
@@ -39,10 +39,13 @@ jobs:
         with:
           cmd: build # will run `yarn build` command
       - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: main # The branch the action should deploy from.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: dist # The folder the action should deploy.
-          SINGLE_COMMIT: true
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
+          clean: true
+          clean-exclude: |
+            CNAME
+            sitemap.xml
+          single-commit: true
