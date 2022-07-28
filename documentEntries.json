@@ -18,12 +18,12 @@
     "path": "the-basics",
     "children": [
       {
-        "name": "Functions",
-        "path": "functions"
-      },
-      {
         "name": "Variables",
         "path": "variables"
+      },
+      {
+        "name": "Functions",
+        "path": "functions"
       },
       {
         "name": "Conditional Flow",
