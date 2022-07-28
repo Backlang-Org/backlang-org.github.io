@@ -1,14 +1,20 @@
 # Functions
 
-Functions have a simple system. They can get called with arguments and execute their code, just like functions in other languages
+
+A piece of code can be combined as function. Functions can expect parameters and can return a value. The simplest function is the ``println` function to print a message to the outputstream (for example the console).
+
+The syntactic structure:
+```ebnf
+<parameter> ::= <name> ":" <typename> ("=" <expression>)?
+<parameter_list> ::= <parameter> || <parameter> "," <parameter_list>
+<function_definition> ::= <modifier>? "func" <name> "(" <parameter_list>* ")" ("->" <typename>)? "{" <body> "}"
+```
 
 A quick example:
 ```back
-func hello() {
-    println("Hello!"); // see that println is also a function with a string as argument?
+func printHello() {
+    println("Hello!");
 }
-
-hello();
 ```
 
 When you want to pass arguments trough a function, do it like so
@@ -28,17 +34,17 @@ func getMyLovedNumber() -> i32 {
     return 2;
 }
 
-let lixousLovedNumber = getMyLovedNumber(); // this will be 2
+let lovedNumber = getMyLovedNumber(); // this will be 2
 ```
 
-When you want to declare the function `static` or `private` or something like that, do that before our arrow
+
 
 ```back
 private static func getMyLovedNumber() -> i32 {
     return 2;
 }
 
-let lixousLovedNumber = getMyLovedNumber(); // this will be 2
+let lovedNumber = getMyLovedNumber(); // this will be 2
 ```
 
 For default values, just define them in the head of the function like so

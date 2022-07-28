@@ -2,6 +2,18 @@
 
 ## Intrinsics
 
+```back
+inline(bs2k) {
+    copy(R1, 1);
+    label("loop");
+        copy(R2, 64);
+        add(R1, R2, R3);
+        push(R3)
+        call(std::put_char(char));
+        jump("loop");
+}
+```
+
 | Intrinsic         | Explanation                                                       | Example                                                               |
 |-------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------|
 | copy              | Copy Value                                                        | <pre><code class="language-back">copy(r0, 42);</code></pre>           |
