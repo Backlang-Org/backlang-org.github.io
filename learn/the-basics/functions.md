@@ -1,7 +1,7 @@
 # Functions
 
 
-A piece of code can be combined as function. Functions can expect parameters and can return a value. The simplest function is the ``println` function to print a message to the outputstream (for example the console).
+A piece of code can be combined as function. Functions can expect parameters and can return a value. The simplest function is the `println` function to print a message to the outputstream (for example the console).
 
 The syntactic structure:
 ```ebnf
