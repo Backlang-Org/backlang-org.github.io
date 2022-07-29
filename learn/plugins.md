@@ -6,3 +6,4 @@ To Install Plugins
 through the manager: `backlang plugins -i Backlang.Backends.Bs2k`
 
 the manager can search for all available plugins: `backlang plugins -a`
+
