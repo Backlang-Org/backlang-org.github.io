@@ -1,6 +1,14 @@
-# Bs2K 
+# Bs2K
+
+The [BackseatSafesystem2k](https://github.com/Backseating-Committee-2k/BackseatSafeSystem2k) is a twitch project by Coder2k. 
+It is a emulator for an invented platform. The main purpose is to learn how to make a runtime+assembler+programming language.
+The Backlang Bs2K Backend compiles to Bs2K assembler. It must be assembled by your own to run your applications on the runtime.
 
 ## Intrinsics
+
+The Bs2K backend has also support for intrinsics, so you can use special runtime features that are not available in the Bs2K Standardlibrary Wrapper.
+
+Here is a simple Example:
 
 ```back
 inline(bs2k) {
@@ -13,6 +21,8 @@ inline(bs2k) {
         jump("loop");
 }
 ```
+
+Here is a small list of available instructions, but all current instructions are supported.
 
 | Intrinsic         | Explanation                                                       | Example                                                               |
 |-------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------|

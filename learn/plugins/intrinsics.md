@@ -5,5 +5,5 @@ To provide custom intrinsic methods you have to create a static class with stati
 ## Identifiers
 
 You can use identifiers to represent for example registers and give addresses names. A custom identifier is present by an enum. You have to provide it as static field on your intrinsic class. Now you can use your enum in intrinsic methods.
-To give numbers only a name like special addresses you can add a `IntrinsicAlias` annotation to your enum.
+To give numbers only a name like special addresses you can add a `IntrinsicAlias` annotation to your enum. The IntrinsicAlias enums will be automaticly converted to its value.
 
