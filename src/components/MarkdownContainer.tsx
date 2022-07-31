@@ -1,6 +1,5 @@
+import { languages } from "prismjs";
 import { Component } from "solid-js";
-import { marked } from "marked";
-import { highlight, languages } from "prismjs";
 import styles from "./MarkdownContainer.module.css";
 
 languages["back"] = {
@@ -26,16 +25,6 @@ languages["back"] = {
   ],
 };
 
-marked.setOptions({
-  highlight: (code, lang) => {
-    if (languages[lang]) {
-      return highlight(code, languages[lang], lang);
-    } else {
-      return code;
-    }
-  },
-});
-
 interface MarkdownContainerProps {
   content: string | undefined;
 }
@@ -43,16 +32,7 @@ interface MarkdownContainerProps {
 const MarkdownContainer: Component<MarkdownContainerProps> = (
   props: MarkdownContainerProps
 ) => {
-  const procs = (content: string | undefined) => {
-    return content != undefined ? marked.parse(content) : "";
-  };
-
-  return (
-    <div
-      class={styles.MarkdownContainer}
-      innerHTML={procs(props.content)}
-    ></div>
-  );
+  return <div class={styles.MarkdownContainer} innerHTML={props.content}></div>;
 };
 
 export default MarkdownContainer;

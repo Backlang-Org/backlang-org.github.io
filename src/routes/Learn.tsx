@@ -11,7 +11,7 @@ import MarkdownContainer from "../components/MarkdownContainer";
 const fetchText = async (doc: any) =>
   (
     await fetch(
-      `https://raw.githubusercontent.com/Backlang-Org/backlang-org.github.io/main/learn/${doc}.md`
+      `https://raw.githubusercontent.com/Backlang-Org/learn/prerendered/${doc}.html`
     )
   ).text();
 
