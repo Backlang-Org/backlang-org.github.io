@@ -42,7 +42,7 @@ jobs:
         with:
           cmd: build # will run `yarn build` command
       - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.2.0
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
