@@ -56,6 +56,10 @@
         "path": "unions"
       },
       {
+        "name": "Operator Overloading",
+        "path": "operator-overloading"
+      },
+      {
         "name": "OOP",
         "path": "oop",
         "children": [
