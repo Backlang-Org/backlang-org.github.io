@@ -34,6 +34,10 @@
         "path": "control_flow_loops"
       },
       {
+        "name": "Arrays",
+        "path": "arrays"
+      },
+      {
         "name": "Working With Data",
         "path": "data"
       }
