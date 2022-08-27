@@ -3,12 +3,9 @@ import { Component } from "solid-js";
 const GettingStarted: Component = () => {
   return (
     <main class="overflow-hidden">
-      <div class="flex flex-col h-max mt-52 items-center justify-center">
-        <span class="text-9xl">🚧</span>
-        <span class="text-3xl mt-7 font-roboto text-slate-50">
-          This is still under Baustelle.
-        </span>
-      </div>
+      1. Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/7.0" target="_blank">.Net 7 Preview</a>
+      2. Download the <a href="https://github.com/Backlang-Org/Backlang/releases" target="_blank">Backlang Compiler binary</a>
+      3. Start coding
     </main>
   );
 };
