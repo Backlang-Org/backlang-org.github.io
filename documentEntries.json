@@ -39,7 +39,33 @@
       },
       {
         "name": "Working With Data",
-        "path": "data"
+        "path": "data",
+        "children": [
+          {
+            "name": "Structs",
+            "path": "structs"
+          },
+          {
+            "name": "Tuples",
+            "path": "tuples"
+          },
+          {
+            "name": "Ranges",
+            "path": "ranges"
+          },
+          {
+            "name": "Unit of Measure Types",
+            "path": "unit-types"
+          },
+          {
+            "name": "Casting",
+            "path": "casting"
+          },
+          {
+            "name": "Excercices",
+            "path": "excercices"
+          }
+        ]
       }
     ]
   },
