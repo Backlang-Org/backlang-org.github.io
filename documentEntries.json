@@ -42,6 +42,10 @@
         "path": "data",
         "children": [
           {
+            "name": "Enumerations",
+            "path": "enums"
+          },
+          {
             "name": "Structs",
             "path": "structs"
           },
