@@ -1,16 +1,16 @@
 import { Link } from "solid-app-router";
 import { Component } from "solid-js";
 import SolidTyper from "../components/SolidTyper";
-import { Swiper, SwiperSlide } from 'swiper/solid';
-import { EffectFade, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/solid";
+import { EffectFade, Autoplay } from "swiper";
 
 // Import Swiper styles
-import 'swiper/css/bundle';
+import "swiper/css/bundle";
 
 const Home: Component = () => {
   return (
     <main>
-      <section class="mx-36 my-28">  
+      <section class="flex flex-col mx-36 my-28">
         <SolidTyper
           baseText="Backlang is "
           texts={[
@@ -26,9 +26,8 @@ const Home: Component = () => {
           changeTime={600}
         />
 
-        <div class="flex mb-4">
-          <div class="w-1/2 bg-gray-400 h-12">
-            <p class="text-white font-inter mt-5 text-lg">
+        <div class="mt-5 flex gap-x-6 border-l-4">
+          <p class="text-white font-inter text-lg w-2/5 pl-4 py-2">
             Backlang is an easy programming language with a{" "}
             <Link href="learn/macros">
               <strong class="text-teal-300 underline">macro system</strong>
@@ -39,20 +38,20 @@ const Home: Component = () => {
             </Link>{" "}
             and object orientated programming.
           </p>
-          </div>
-          <div class="w-1/2 bg-gray-500 h-12">
+          <div class="w-3/5">
             <Swiper
-                  spaceBetween={50}
-                  slidesPerView={1}
-              modules={[EffectFade, Autoplay]} autoplay={true}
-              class="bg-white w-1/2  h-[50px] border-l-4 pl-4 py-2 flex-auto"
-              >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
+              spaceBetween={50}
+              slidesPerView={1}
+              modules={[EffectFade, Autoplay]}
+              autoplay={true}
+              class="bg-white w-3/5 h-[50px] my-3"
+            >
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
             </Swiper>
-          </div>    
+          </div>
         </div>
 
         <a
