@@ -22,6 +22,10 @@
     @apply list-disc pl-8 my-2
 }
 
+.MarkdownContainer ol {
+    @apply list-decimal pl-8 my-2
+}
+
 .MarkdownContainer li {
     @apply font-segoe pl-2
 }
