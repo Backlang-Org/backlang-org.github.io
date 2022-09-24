@@ -22,10 +22,11 @@ const Home: Component = () => {
           baseText="Backlang is "
           texts={[
             "free",
+            "open-source",
             "msbuild integrated",
             "functional",
             "oop",
-            "code reducing",
+            "macro orientated",
           ]}
           startDelay={500}
           stepTime={100}
