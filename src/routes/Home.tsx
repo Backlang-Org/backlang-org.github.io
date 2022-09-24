@@ -8,6 +8,7 @@ import syntaxHighlighting from "@/assets/screenshots/syntax_highlighting.jpg";
 import codeCompletion from "@/assets/screenshots/code_completion.jpg";
 import methodSignature from "@/assets/screenshots/method_signature.jpg";
 import msbuild from "@/assets/screenshots/msbuild.jpg";
+import managerInstallPlugin from "@/assets/screenshots/manager_install_plugin.jpg";
 import manager from "@/assets/screenshots/manager.jpg";
 
 // Import Swiper styles
@@ -55,28 +56,49 @@ const Home: Component = () => {
               </h3>
             </a>
           </div>
-          <div class="w-3/5">
+          <div class="w-3/5 relative">
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
               modules={[EffectFade, Autoplay]}
               autoplay={true}
-              class="bg-[#1e1e1e] w-4/5  my-3"
+              class="bg-[#1e1e1e] w-4/5 my-3"
             >
-              <SwiperSlide>
+              <SwiperSlide class="h-full">
                 <img src={syntaxHighlighting} />
+                <p class="absolute text-center w-full text-white bottom-0 px-3 py-2">
+                  Syntax Highlighting
+                </p>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide class="h-full">
                 <img src={codeCompletion} />
+                <p class="absolute text-center w-full text-white bottom-0 px-3 py-2">
+                  Code Completion
+                </p>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide class="h-max">
                 <img src={methodSignature} />
+                <p class="absolute text-center w-full text-white bottom-0 px-3 py-2">
+                  Function Signature Help
+                </p>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide class="h-full">
                 <img src={msbuild} />
+                <p class="absolute text-center w-full text-white bottom-0 px-3 py-2">
+                  MS Build Integration
+                </p>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide class="h-full">
                 <img src={manager} />
+                <p class="absolute text-center w-full text-white bottom-0 px-3 py-2">
+                  Manager
+                </p>
+              </SwiperSlide>
+              <SwiperSlide class="h-full">
+                <img src={managerInstallPlugin} />
+                <p class="absolute text-center w-full text-white bottom-0 px-3 py-2">
+                  Extendable through plugins
+                </p>
               </SwiperSlide>
             </Swiper>
           </div>
