@@ -32,44 +32,55 @@ const Home: Component = () => {
           changeTime={600}
         />
 
-        <div class="mt-5 flex gap-x-6 border-l-4">
-          <p class="text-white font-inter text-lg w-2/5 pl-4 py-2">
-            Backlang is an easy programming language with a{" "}
-            <Link href="learn/macros">
-              <strong class="text-teal-300 underline">macro system</strong>
-            </Link>{" "}
-            focusing on{" "}
-            <Link href="">
-              <strong class="text-teal-300 underline">code reduction</strong>
-            </Link>{" "}
-            and object orientated programming.
-          </p>
+        <div class="mt-5 flex gap-x-6 ">
+          <div class="w-2/5">
+            <p class="text-white font-inter text-lg pl-4 py-2 border-l-4 h-fit">
+              Backlang is an easy programming language with a{" "}
+              <Link href="learn/macros">
+                <strong class="text-teal-300 underline">macro system</strong>
+              </Link>{" "}
+              focusing on{" "}
+              <Link href="">
+                <strong class="text-teal-300 underline">code reduction</strong>
+              </Link>{" "}
+              and object orientated programming.
+            </p>
+            <a
+              href="https://playground.backlang.org/"
+              class="flex rounded-[1.25rem] mt-7 w-fit ml-2 bg-teal-300 hover:bg-teal-100 px-4 py-2 focus:outline-none hover:scale-110 transition-all duration-150 ease-in-out"
+              target="__blank"
+            >
+              <h3 class="text-xl font-inter text-slate-900 select-none">
+                To the Playground!
+              </h3>
+            </a>
+          </div>
           <div class="w-3/5">
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
               modules={[EffectFade, Autoplay]}
               autoplay={true}
-              class="bg-white w-3/5 h-[50px] my-3"
+              class="bg-[#1e1e1e] w-4/5  my-3"
             >
-              <SwiperSlide><img src={syntaxHighlighting} /></SwiperSlide>
-              <SwiperSlide><img src={codeCompletion} /></SwiperSlide>
-              <SwiperSlide><img src={methodSignature} /></SwiperSlide>
-              <SwiperSlide><img src={msbuild} /></SwiperSlide>
-              <SwiperSlide><img src={manager} /></SwiperSlide>
+              <SwiperSlide>
+                <img src={syntaxHighlighting} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={codeCompletion} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={methodSignature} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={msbuild} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={manager} />
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
-
-        <a
-          href="https://playground.backlang.org/"
-          class="flex rounded-[1.25rem] mt-7 w-fit ml-2 bg-teal-300 hover:bg-teal-100 px-4 py-2 focus:outline-none hover:scale-110 transition-all duration-150 ease-in-out"
-          target="__blank"
-        >
-          <h3 class="text-xl font-inter text-slate-900 select-none">
-            To the Playground!
-          </h3>
-        </a>
       </section>
     </main>
   );
