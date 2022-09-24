@@ -17,7 +17,7 @@ import "swiper/css/bundle";
 const Home: Component = () => {
   return (
     <main>
-      <section class="flex flex-col mx-36 my-28">
+      <section class="flex flex-col mx-16 my-14">
         <SolidTyper
           baseText="Backlang is "
           texts={[
