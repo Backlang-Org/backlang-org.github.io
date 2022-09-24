@@ -4,6 +4,12 @@ import SolidTyper from "../components/SolidTyper";
 import { Swiper, SwiperSlide } from "swiper/solid";
 import { EffectFade, Autoplay } from "swiper";
 
+import syntaxHighlighting from "@/assets/screenshots/syntax_highlighting.jpg";
+import codeCompletion from "@/assets/screenshots/code_completion.jpg";
+import methodSignature from "@/assets/screenshots/method_signature.jpg";
+import msbuild from "@/assets/screenshots/msbuild.jpg";
+import manager from "@/assets/screenshots/manager.jpg";
+
 // Import Swiper styles
 import "swiper/css/bundle";
 
@@ -46,10 +52,11 @@ const Home: Component = () => {
               autoplay={true}
               class="bg-white w-3/5 h-[50px] my-3"
             >
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
+              <SwiperSlide><img src={syntaxHighlighting} /></SwiperSlide>
+              <SwiperSlide><img src={codeCompletion} /></SwiperSlide>
+              <SwiperSlide><img src={methodSignature} /></SwiperSlide>
+              <SwiperSlide><img src={msbuild} /></SwiperSlide>
+              <SwiperSlide><img src={manager} /></SwiperSlide>
             </Swiper>
           </div>
         </div>
