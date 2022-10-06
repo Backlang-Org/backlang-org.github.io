@@ -58,6 +58,8 @@ const Home: Component = () => {
                 To the Playground!
               </h3>
             </a>
+
+            <img src={bot} width="150" class="m-5" />
           </div>
           <div class="w-3/5 relative">
             <Swiper
@@ -106,10 +108,6 @@ const Home: Component = () => {
             </Swiper>
           </div>
         </div>
-      </section>
-
-      <section>
-        <img src={bot} />
       </section>
     </main>
   );
