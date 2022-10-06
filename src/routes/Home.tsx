@@ -44,9 +44,7 @@ const Home: Component = () => {
                 <strong class="text-teal-300 underline">macro system</strong>
               </Link>{" "}
               focusing on{" "}
-              <Link href="">
-                <strong class="text-teal-300 underline">code reduction</strong>
-              </Link>{" "}
+              <strong class="text-teal-300 underline">code reduction</strong>
               and object orientated programming.
             </p>
             <a
