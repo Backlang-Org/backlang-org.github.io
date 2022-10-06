@@ -127,6 +127,7 @@
       },
       {
         "name": "Writing a DSL",
+        "path": "dsl",
         "children": [
           {
             "name": "Intro",
