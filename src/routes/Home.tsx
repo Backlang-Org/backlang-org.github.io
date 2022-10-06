@@ -11,6 +11,8 @@ import msbuild from "@/assets/screenshots/msbuild.jpg";
 import managerInstallPlugin from "@/assets/screenshots/manager_install_plugin.jpg";
 import manager from "@/assets/screenshots/manager.jpg";
 
+import bot from "@/assets/my-dotnet-bot-mod.png";
+
 // Import Swiper styles
 import "swiper/css/bundle";
 
@@ -104,6 +106,10 @@ const Home: Component = () => {
             </Swiper>
           </div>
         </div>
+      </section>
+
+      <section>
+        <img src={bot} />
       </section>
     </main>
   );
