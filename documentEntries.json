@@ -124,6 +124,15 @@
       {
         "name": "Writing Custom Macros",
         "path": "custom"
+      },
+      {
+        "name": "Writing a DSL",
+        "children": [
+          {
+            "name": "Intro",
+            "path": "intro"
+          }
+        ]
       }
     ]
   },
