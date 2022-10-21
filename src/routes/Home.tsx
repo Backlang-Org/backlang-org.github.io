@@ -28,7 +28,7 @@ const Home: Component = () => {
             "msbuild integrated",
             "functional",
             "oop",
-            "macro orientated",
+            "macro oriented",
           ]}
           startDelay={500}
           stepTime={100}
@@ -44,8 +44,8 @@ const Home: Component = () => {
                 <strong class="text-teal-300 underline">macro system</strong>
               </Link>{" "}
               focusing on{" "}
-              <strong class="text-teal-300 underline">code reduction</strong>
-              and object orientated programming.
+              <strong class="text-teal-300 underline">code reduction</strong>{" "}
+              and object oriented programming.
             </p>
             <a
               href="https://playground.backlang.org/"
