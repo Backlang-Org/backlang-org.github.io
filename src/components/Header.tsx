@@ -38,6 +38,7 @@ const Header: Component = () => {
         </NavLink>
         <NavLink
           href="https://dev.to/t/backlang/latest"
+          target="_blank"
           class="focus:outline-none"
           inactiveClass="focus:outline-none hover:underline"
           activeClass="focus:outline-none underline"
