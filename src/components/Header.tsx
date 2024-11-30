@@ -29,7 +29,7 @@ const Header: Component = () => {
           <h3 class="font-roboto text-2xl font-thin">Getting Started</h3>
         </NavLink>
         <NavLink
-          href="http://learn.backlang.org"
+          href="https://furesoft.gitbook.io/backlang"
           class="focus:outline-none"
           inactiveClass="focus:outline-none hover:underline"
           activeClass="focus:outline-none underline"
